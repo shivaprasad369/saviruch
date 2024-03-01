@@ -1,0 +1,92 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 12px 0;
+    
+}
+.container .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0 12px 0;
+    background-color: #FFFFFF34;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 30px;
+    padding-bottom: 2rem;
+}
+.container .box .form{
+    display: flex;
+    flex-direction: column;
+   
+    
+  
+}
+.container .box .form input{
+    height: 3rem;
+    border: none;
+    width: 25rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.container .box .form textarea {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+.container .box .form button{
+    height: 3rem;
+    border: none;
+    width: 26rem;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.container .box .form button:hover{
+  color: #000000;
+  background-color: #FFFFFF;
+  height: 3rem;
+}
+@media screen and (max-width:496px)
+{
+    .container {
+        width: 100%;
+    }
+    .container .box{
+        width: 90%;
+    }
+    .container .box .form input{
+        height: 3rem;
+        border: none;
+        width: 20rem;
+        margin-bottom: 2rem;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .container .box .form textarea {
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+    .container .box .form button{
+        height: 3rem;
+        border: none;
+        width: 21rem;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px;
+        background-color: #000000;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
