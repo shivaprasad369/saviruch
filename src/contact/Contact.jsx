@@ -1,5 +1,7 @@
 import React from 'react'
 import './Contact.css'
+import { motion } from 'framer-motion'
+
 export default function Contact() {
     const handleSubmit=(e)=>{
         
@@ -7,7 +9,7 @@ export default function Contact() {
         
     }
   return (
-    <div className='py-[2rem] container' id='contact'>
+    <motion.div initial={{opacity:0,x:300,rotate:90}} whileInView={{opacity:1,x:0,rotate:0,transition:{ease:"easeInOut",delay:0.5, type:'spring'}}} className='py-[2rem] container' id='contact'>
       <div className='box'>
         <h1>Contact Us</h1>
        <form action="" className='form ' onSubmit={handleSubmit} >
@@ -20,6 +22,6 @@ export default function Contact() {
          <button type="submit" >Submit</button>
        </form>
       </div>
-    </div>
+    </motion.div>
   )
 }

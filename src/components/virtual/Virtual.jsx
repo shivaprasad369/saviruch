@@ -4,11 +4,12 @@ import Shade from "../../assets/shade.png";
 import ReactCompareImage from "react-compare-image";
 import Before from "../../assets/Slide/savi ruchi 3.png";
 import After from "../../components/hero/images/image_3-removebg-preview.png";
+import { motion } from "framer-motion";
 const Virtual = () => {
   return (
     <>
-      <div className={css.Virtual} id="about">
-        <div className={css.left}>
+      <motion.div initial={{opacity:0,y:-50}} whileInView={{opacity:1, y:0,transition:{delay:0.3,type:'spring'}}} className={css.Virtual} id="about">
+        <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1, x:0,transition:{delay:0.6,type:'spring'}}} className={css.left}>
           <span style={{ color: "#D4AF37" }}>About us</span>
           <span>Crafting Culinary Delights Since 2021</span>
           <p style={{ fontSize: "1rem", fontWeight: 400, lineHeight: 1.5 ,letterSpacing:'1px'}}>
@@ -30,13 +31,13 @@ const Virtual = () => {
           </p>
           {/* <span style={{ color: "#FFD700" }}>Try Now!</span>
         <img src={Shade} alt="" /> */}
-        </div>
-        <div className={css.right}>
+        </motion.div>
+        <motion.div initial={{opacity:0,x:50}} whileInView={{opacity:1, x:0,transition:{delay:0.6,type:'spring'}}} className={css.right}>
           <div className={css.wrapper}>
             <ReactCompareImage leftImage={Before} rightImage={After}  />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       {/* <p>Driven by a passion for quality and a commitment to authenticity,</p> */}
     </>
   );

@@ -15,26 +15,26 @@ import { Avatar } from "@mui/material";
 
 const Testimonial = () => {
   return (
-    <div className={css.testimonials}>
+    <motion.div initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0,transition:{ease:"easeInOut",delay:0.5, type:'spring'}}} className={css.testimonials}>
       <div className={css.wrapper}>
-        <div className={css.container}>
+        <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:0.9, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>Top Rated</span>
           <span>
           Savi Ruchi's Chefless Frozen Gravy Paste Ready in 10 Minutes.
           </span>
-        </div>
+        </motion.div>
 
-        <img src={logo} alt="" />
+        <motion.img initial={{opacity:0,scale:0.8}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:0.7, type:'spring'}}} src={logo} alt="" />
           
-        <div className={css.container}>
+        <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:1, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>50+</span>
           <span>Happy Customers with us</span>
-        </div>
+        </motion.div>
       </div>
 
       <div className={css.reviews} style={{color:'#D4AF37'}}>Reviews</div>
 
-      <div className={css.carousel}>
+      <motion.div initial={{opacity:1,scale:0.9}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:1.2, type:'spring'}}} className={css.carousel}>
         <Swiper
           slidesPerView={2}
           slidesPerGroup={1}
@@ -65,8 +65,8 @@ const Testimonial = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
