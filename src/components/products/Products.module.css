@@ -11,7 +11,8 @@
 .container>:nth-child(1){
     position: absolute;
     width: 8rem;
-    left: 30%;top: -3rem;
+    left: 30%;
+    top: -3rem;
 }
 .products{
     display: grid;
@@ -19,6 +20,7 @@
     grid-template-columns: 25% auto;
 }
 .menu{
+    
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -32,13 +34,14 @@
 }
 .list{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
     overflow-y: scroll;
     grid-gap: 5rem;
-    justify-content: space-between;
+    justify-content: space-between; 
+    height: 25rem;
 }
 .product {
-width: 18rem;
+width: 15rem;
 height: 12rem;
 background-color: white;
 position: relative;
@@ -59,9 +62,20 @@ border-radius: 1rem;
     .container>:nth-child(1){
         display: none;
     }
+    .menu{
+        display: flex;
+        flex-direction: column;
+     
+         
+    }
     .products{
         grid-template-columns: none;
         gap: 1rem;
+    }
+    
+    .product {
+        width: 80%;
+        height: 10rem;
     }
     .menu{
         flex-direction: row;
@@ -71,7 +85,9 @@ border-radius: 1rem;
     .menu{
         margin-left: -2rem;
         gap: 0.5rem;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+  
         width: 100%;
         font-size: 1.2rem;
     }

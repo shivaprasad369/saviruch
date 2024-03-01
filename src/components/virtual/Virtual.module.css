@@ -29,7 +29,7 @@
     
    
     line-break: 5px;
-    width: 80%;
+    width: 60%;
 }
 
 .left>:nth-child(3){
@@ -40,11 +40,10 @@
     justify-content: center;
     position:absolute;
     width: 10rem;
-    height: 10rem;
     bottom: 3rem;
 }
 .wrapper{
-    width: 25rem;
+    width: 20rem;
 }
 
 @media screen and (max-width:856px)
@@ -67,9 +66,14 @@
     }
     .Virtual .left>:nth-child(1){
         text-align: center;
+       
     }
     .Virtual .left>:nth-child(2){
         text-align: center;
+       
+    }
+    .Virtual .left>:nth-child(3){
+       width: 90%;
        
     }
     @media screen and (max-width:640px)
