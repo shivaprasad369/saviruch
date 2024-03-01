@@ -12,7 +12,7 @@ const Virtual = () => {
         <motion.div initial={{opacity:0,x:-50}} whileInView={{opacity:1, x:0,transition:{delay:0.6,type:'spring'}}} className={css.left}>
           <span style={{ color: "#D4AF37" }}>About us</span>
           <span>Crafting Culinary Delights Since 2021</span>
-          <p style={{ fontSize: "1rem", fontWeight: 400, lineHeight: 1.5 ,letterSpacing:'1px'}}>
+          <p style={{ fontSize: "1rem",  fontFamily:' "Roboto Slab", serif', fontWeight: 300, lineHeight: 1.5 ,letterSpacing:'1px'}}>
             Savi Ruchi, where culinary excellence meets convenience. Founded in
             2021 by the dynamic duo Sneha and Hitesh.
             <br />
