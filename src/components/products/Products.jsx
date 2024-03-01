@@ -22,7 +22,7 @@ const [clr,setClr]=useState('all')
       <h1 style={{color:'#D4AF37'}}>Our Products</h1>
       <div className={css.products}>
         <ul className={css.menu} style={{color:'#D4AF37'}}>
-          <li className={clr==='all'? 'acitive':""} onClick={()=>{setMenuProducts(ProductsData);} }><span style={clr==='all'? {borderBottom:'2px solid red'}:""}>All</span></li>
+          <li className={clr==='all'? 'acitive':""} onClick={()=>{setMenuProducts(ProductsData);} }><span >All</span></li>
           <li className={clr==='skin care'? 'acitive':""} onClick={()=>filter('skin care')}> Veg Masala's</li>
           <li className={clr==='conditioner'? 'acitive':""} onClick={()=>filter('conditioner')}>Chicken Masala's</li>
           <li className={clr==='foundation'? 'acitive':""} onClick={()=>filter('foundation')}>Fish Masala's</li>
