@@ -9,7 +9,7 @@ export default function Contact() {
         
     }
   return (
-    <motion.div initial={{opacity:0,x:300,rotate:90}} whileInView={{opacity:1,x:0,rotate:0,transition:{ease:"easeInOut",delay:0.5, type:'spring'}}} className='py-[2rem] container' id='contact'>
+    <motion.div initial={{opacity:0,x:-300,rotate:90}} whileInView={{opacity:1,x:0,rotate:0,transition:{ease:"easeIn",delay:0.5, type:'spring'}}} className='py-[2rem] container' id='contact'>
       <div className='box'>
         <h1>Contact Us</h1>
        <form action="" className='form ' onSubmit={handleSubmit} >

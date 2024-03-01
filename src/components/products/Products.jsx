@@ -22,11 +22,11 @@ const [clr,setClr]=useState('all')
       <h1 style={{color:'#D4AF37'}}>Our Products</h1>
       <div className={css.products}>
         <ul className={css.menu} style={{color:'#D4AF37'}}>
-          <li className={clr==='all'? 'acitive':""} onClick={()=>{setMenuProducts(ProductsData);} }><span >All</span></li>
-          <li className={clr==='skin care'? 'acitive':""} onClick={()=>filter('skin care')}> Veg Masala's</li>
-          <li className={clr==='conditioner'? 'acitive':""} onClick={()=>filter('conditioner')}>Chicken Masala's</li>
-          <li className={clr==='foundation'? 'acitive':""} onClick={()=>filter('foundation')}>Fish Masala's</li>
-          <li className={clr==='mutton'? 'acitive':""} onClick={()=>filter('mutton')}>Mutton Masala's</li>
+          <li className={clr==='all'? css.acitive:""} onClick={()=>{setMenuProducts(ProductsData);} }><span >All</span></li>
+          <li className={clr==='skin care'? css.acitive:""} onClick={()=>filter('skin care')}> Veg Masala's</li>
+          <li className={clr==='conditioner'?  css.acitive:""} onClick={()=>filter('conditioner')}>Chicken Masala's</li>
+          <li className={clr==='foundation'?  css.acitive:""} onClick={()=>filter('foundation')}>Fish Masala's</li>
+          <li className={clr==='mutton'?  css.acitive:""} onClick={()=>filter('mutton')}>Mutton Masala's</li>
         </ul>
         <div className={css.list} ref={parent} style={{color:'black'}}>
           {MenuProducts.map((product, i) => (

@@ -15,18 +15,18 @@ import { Avatar } from "@mui/material";
 
 const Testimonial = () => {
   return (
-    <motion.div initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0,transition:{ease:"easeInOut",delay:0.5, type:'spring'}}} className={css.testimonials}>
+    <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0,transition:{ease:"easeIn",delay:0.5, type:'spring'}}} className={css.testimonials}>
       <div className={css.wrapper}>
-        <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:0.9, type:'spring'}}} className={css.container}>
+        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.9, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>Top Rated</span>
           <span>
           Savi Ruchi's Chefless Frozen Gravy Paste Ready in 10 Minutes.
           </span>
         </motion.div>
 
-        <motion.img initial={{opacity:0,scale:0.8}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:0.7, type:'spring'}}} src={logo} alt="" />
+        <motion.img initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.7, type:'spring'}}} src={logo} alt="" />
           
-        <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:1, type:'spring'}}} className={css.container}>
+        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:1, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>50+</span>
           <span>Happy Customers with us</span>
         </motion.div>
@@ -34,7 +34,7 @@ const Testimonial = () => {
 
       <div className={css.reviews} style={{color:'#D4AF37'}}>Reviews</div>
 
-      <motion.div initial={{opacity:1,scale:0.9}} whileInView={{opacity:1,scale:1,transition:{ease:"easeInOut",delay:1.2, type:'spring'}}} className={css.carousel}>
+      <motion.div initial={{opacity:1}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:1.2, type:'spring'}}} className={css.carousel}>
         <Swiper
           slidesPerView={2}
           slidesPerGroup={1}
@@ -55,13 +55,13 @@ const Testimonial = () => {
         >
           {TestimonialsData.map((testimonial, i) => (
             <SwiperSlide>
-              <div className={css.testimonial} key={i} style={{color:'black'}}>
+              <motion.div whileHover={{scale:1.1,transition:{type:'spring',delay:0.3}}} className={css.testimonial} key={i} style={{color:'black'}}>
               <Avatar className="img" src="/broken-image.jpg" sx={{height:70, width:70}} />
                 <span>{testimonial.comment}</span>
                 <hr />
                 
                 <span>{testimonial.name}</span>
-              </div>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
