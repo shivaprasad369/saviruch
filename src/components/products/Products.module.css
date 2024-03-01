@@ -1,5 +1,5 @@
 .container{
-    /* padding:0 2rem; */
+    padding:0 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,11 @@
 .container>:nth-child(1){
     position: absolute;
     width: 8rem;
-    left: 30%;
-    top: -3rem;
+    left: 30%;top: -3rem;
 }
 .products{
     display: grid;
-
+    width: 90%;
     grid-template-columns: 25% auto;
 }
 .menu{
