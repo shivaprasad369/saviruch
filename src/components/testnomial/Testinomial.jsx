@@ -15,18 +15,18 @@ import { Avatar } from "@mui/material";
 
 const Testimonial = () => {
   return (
-    <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0,transition:{ease:"easeIn",delay:0.5, type:'spring'}}} className={css.testimonials}>
+    <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0,transition:{ease:"easeIn",delay:0.2, type:'spring'}}} className={css.testimonials}>
       <div className={css.wrapper}>
-        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.9, type:'spring'}}} className={css.container}>
+        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.4, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>Top Rated</span>
           <span>
           Savi Ruchi's Chefless Frozen Gravy Paste Ready in 10 Minutes.
           </span>
         </motion.div>
 
-        <motion.img initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.7, type:'spring'}}} src={logo} alt="" />
+        <motion.img initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.3, type:'spring'}}} src={logo} alt="" />
           
-        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:1, type:'spring'}}} className={css.container}>
+        <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.5, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>50+</span>
           <span>Happy Customers with us</span>
         </motion.div>
@@ -34,7 +34,7 @@ const Testimonial = () => {
 
       <div className={css.reviews} style={{color:'#D4AF37'}}>Reviews</div>
 
-      <motion.div initial={{opacity:1}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:1.2, type:'spring'}}} className={css.carousel}>
+      <motion.div initial={{opacity:1}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.6, type:'spring'}}} className={css.carousel}>
         <Swiper
           slidesPerView={2}
           slidesPerGroup={1}
