@@ -24,7 +24,7 @@ const Testimonial = () => {
           </span>
         </motion.div>
 
-        <motion.img initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.3, type:'spring'}}} src={logo} alt="" />
+        <motion.img initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.2, type:'spring'}}} src={logo} alt="" />
           
         <motion.div initial={{opacity:0}} whileInView={{opacity:1,transition:{ease:"easeIn",delay:0.5, type:'spring'}}} className={css.container}>
           <span style={{color:'#D4AF37'}}>50+</span>
